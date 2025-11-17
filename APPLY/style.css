@@ -1,0 +1,336 @@
+/* =======================
+   General Styles
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* =======================
+   Buttons
+======================= */
+.btn, button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 2px;
+    background-color: #1e3a8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover {
+    background-color: #3b82f6;
+}
+
+/* =======================
+   Forms
+======================= */
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* =======================
+   Tables
+======================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* Links in table */
+table a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+table a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   Status Badges
+======================= */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.status-Pending { background-color: #f59e0b; }    /* Orange */
+.status-Reviewed { background-color: #3b82f6; }   /* Blue */
+.status-Accepted { background-color: #10b981; }   /* Green */
+.status-Rejected { background-color: #ef4444; }   /* Red */
+
+/* =======================
+   Admin Panel
+======================= */
+.admin-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.admin-container h2 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Table inside admin panel */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+.admin-table th {
+    background-color: #1e3a8a;
+    color: #fff;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* Buttons inside admin table */
+.admin-table button {
+    padding: 5px 10px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: 0.3s;
+}
+.admin-table button:hover {
+    background-color: #3b82f6;
+}
+
+/* Search form in admin panel */
+.admin-container form input[type="text"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin-container form button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+/* =======================
+   Admin Login Page
+======================= */
+.admin-login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.admin-login-container h2 {
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.admin-login-container input[type="text"],
+.admin-login-container input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.admin-login-container button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.admin-login-container button:hover {
+    background-color: #3b82f6;
+}
+
+.admin-login-container p {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.admin-login-container .error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* =======================
+   Applicant Dashboard
+======================= */
+.dashboard-container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+.dashboard-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dashboard-table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 768px) {
+    .container, .admin-container, .dashboard-container {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .admin-table th, .admin-table td,
+    .dashboard-table th, .dashboard-table td {
+        font-size: 0.85em;
+        padding: 8px 10px;
+    }
+
+    .admin-table button, .btn, button {
+        padding: 6px 10px;
+        font-size: 0.85em;
+    }
+}
